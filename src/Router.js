@@ -11,8 +11,8 @@ export default function Router() {
     <Switch>
       <Route exact path='/' component={Main} />
       <Route exact path='/add' component={Add} />
-      <Route exact path='login' component={Login} />
-      <Route exact path='business:id' component={BusinessDetail} />
+      <Route exact path='/login' component={Login} />
+      <Route exact path='/business:id' component={BusinessDetail} />
     </Switch>
   )
 }
