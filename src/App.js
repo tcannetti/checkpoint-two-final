@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
-import NavBar from './containers/NavBar'
+import Nav from './containers/Nav'
 import Router from './Router'
 import store from './redux/store'
 
@@ -11,7 +11,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <NavBar />
+        <Nav />
         <Router />
       </BrowserRouter>
     </Provider>
