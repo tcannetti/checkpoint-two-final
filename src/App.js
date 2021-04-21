@@ -5,7 +5,7 @@ import Nav from './containers/Nav'
 import Router from './Router'
 import store from './redux/store'
 
-import './App.cs'
+// import './App.cs'
 
 export default function App() {
   return (

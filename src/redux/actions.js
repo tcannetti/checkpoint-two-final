@@ -1,4 +1,4 @@
-const addListing = (listing) => {
+export const addListing = (listing) => {
   return (dispatch) => {
     fetch(`https://maps.google.com/maps/api/geocode/json?address=${listing.address}&key=AIzaSyBnSX01PranxI4L-iRi1mOkMkcMc72nDec`)
     .then((res) => res.json())
@@ -14,25 +14,24 @@ const addListing = (listing) => {
   };
 };
 
-const deleteListing = (id) => {
+export const deleteListing = (id) => {
   return {
     type: "DELETE_LISTING",
     value: id,
   };
 };
 
-const loggedIn = (Boolean) => {
+export const loggedIn = (Boolean) => {
   return {
     type: "LOGGED_IN",
     value: Boolean,
   };
 };
 
-const setUser = (username) => {
+export const setUser = (username) => {
   return {
     type: "SET_USER",
     value: username,
   };
 };
 
-export default (addListing, deleteListing, loggedIn, setUser)
