@@ -1,6 +1,6 @@
 export const addListing = (listing) => {
   return (dispatch) => {
-    fetch(`https://maps.google.com/maps/api/geocode/json?address=${listing.address}&key=AIzaSyBnSX01PranxI4L-iRi1mOkMkcMc72nDec`)
+    fetch(`https://maps.google.com/maps/api/geocode/json?key=AIzaSyBnSX01PranxI4L-iRi1mOkMkcMc72nDec&address=${listing.address}`)
     .then((res) => res.json())
     .then((response) => {
       listing.lat = response.results[0].geometry.location.lat;
