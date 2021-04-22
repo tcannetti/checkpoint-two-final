@@ -1,14 +1,15 @@
 import React from "react";
-import { Container } from "@material-ui/core";
+import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Map from "./Map";
 
 const BusinessDetail = (props) => {
   const id = props.match.params.id;
-  const listing = props.listings.find((listing) => listing.id == id);
+  const listing = props.listings.find((listing) => listing.id === Number(id));
   console.log(id);
+  console.log(props.listings);
   return (
-    <Container style={{ height: "50vh", width: "45vw" }}>
+    <Container maxWidth="sm">
       <Typography className="biz-paper">
         <h2>{listing["name"]}</h2>
         <h5>Address:</h5> <p> {listing["address"]}</p>

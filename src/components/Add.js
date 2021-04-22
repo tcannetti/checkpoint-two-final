@@ -23,8 +23,8 @@ const Add = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const payload = { ...business };
-    payload.id = uuidv4();
-    props.addBusiness(payload);
+    payload.id = props.listings.length+1;
+    props.addListing(payload);
     setBusiness({
       redirect: true,
     });

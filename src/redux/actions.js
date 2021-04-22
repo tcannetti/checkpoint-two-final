@@ -5,6 +5,8 @@ export const addListing = (listing) => {
     .then((response) => {
       listing.lat = response.results[0].geometry.location.lat;
       listing.lng = response.results[0].geometry.location.lng;
+      console.log(listing)
+      console.log(response)
       const action = {
         type: "ADD_LISTING",
         value: listing,
