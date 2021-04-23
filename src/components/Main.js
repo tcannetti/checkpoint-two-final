@@ -18,10 +18,7 @@ const Main = (props) => {
     if (cookies.loggedIn) {
       return (
         <TableCell>
-          <DeleteIcon
-            onClick={() => props.deleteListing(id)}
-            style={{ color: "red" }}
-          />
+          <DeleteIcon onClick={() => props.deleteListing(id)} style={{ color: "red" }} />
         </TableCell>
       );
     }

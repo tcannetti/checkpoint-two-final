@@ -30,28 +30,9 @@ class App extends Component {
       <div className="App">
         <Container maxWidth="sm">
           <form className="login-container" onSubmit={this.login}>
-            <TextField
-              required
-              onChange={this.handleTextChange}
-              value={this.state.username}
-              name="username"
-              label="Username"
-              type="text"
-            />
-            <TextField
-              required
-              onChange={this.handleTextChange}
-              value={this.state.password}
-              name="password"
-              label="Password"
-              type="password"
-            />
-            <Button
-              type="submit"
-              className="login-submit"
-              variant="contained"
-              color="gray"
-            >
+            <TextField required onChange={this.handleTextChange} value={this.state.username} name="username" label="Username" type="text" />
+            <TextField required onChange={this.handleTextChange} value={this.state.password} name="password" label="Password" type="password" />
+            <Button type="submit" className="login-submit" variant="contained" color="gray" >
               Login
             </Button>
           </form>

@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding-inline-start: 1.25rem;
+}
+
 .login-container {
   display: flex;
   flex-direction: column;
@@ -13,14 +22,6 @@
   margin-top: 1.5rem !important;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  padding-inline-start: 1.25rem;
-}
 
 .card-container {
   display: flex;

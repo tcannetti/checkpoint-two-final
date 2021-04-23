@@ -26,10 +26,7 @@ export default function Nav(props) {
                   <Button color="inherit" className="list-list-item">
                     <Link to="/add">Add</Link>
                   </Button>
-                  <Button
-                    color="inherit"
-                    className="list-list-item"
-                    onClick={() => {
+                  <Button color="inherit" className="list-list-item" onClick={() => {
                       document.cookie = "loggedIn=";
                       window.location.replace("/login");
                     }}
@@ -41,10 +38,7 @@ export default function Nav(props) {
             </li>
             <li color="inherit" className="list-list-item">
               {document.cookie !== "loggedIn=true" && (
-                <Button
-                  color="inherit"
-                  className="list-list-item"
-                  onClick={() => {
+                <Button color="inherit" className="list-list-item" onClick={() => {
                     document.cookie = "loggedIn=";
                     window.location.replace("/login");
                   }}
