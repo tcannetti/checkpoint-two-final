@@ -10,7 +10,7 @@ const BusinessDetail = (props) => {
   console.log(props.listings);
   return (
     <Container maxWidth="sm">
-      <Typography className="biz-paper">
+      <Typography className="detail-container">
         <h2>{listing["name"]}</h2>
         <h5>Address:</h5> <p> {listing["address"]}</p>
         <h5>Hours:</h5> <p> {listing["hours"]} </p>

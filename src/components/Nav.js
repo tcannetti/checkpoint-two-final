@@ -12,23 +12,23 @@ export default function Nav(props) {
   return (
     <div>
       <AppBar position="relative">
-        <Toolbar className="nav-bar">
-          <Typography variant="h6" className="nav-title">
+        <Toolbar className="nav-toolbar">
+          <Typography variant="h6" className="list-title">
             ATX Small Business App
           </Typography>
-          <ul className="nav-list">
-            <Button color="inherit" className="nav-list-item">
+          <ul className="list-list">
+            <Button color="inherit" className="list-list-item">
               <Link to="/">Listing</Link>
             </Button>
             <li>
               {document.cookie === "loggedIn=true" && (
                 <div>
-                  <Button color="inherit" className="nav-list-item">
+                  <Button color="inherit" className="list-list-item">
                     <Link to="/add">Add</Link>
                   </Button>
                   <Button
                     color="inherit"
-                    className="nav-list-item"
+                    className="list-list-item"
                     onClick={() => {
                       document.cookie = "loggedIn=";
                       window.location.replace("/login");
@@ -39,11 +39,11 @@ export default function Nav(props) {
                 </div>
               )}
             </li>
-            <li color="inherit" className="nav-list-item">
+            <li color="inherit" className="list-list-item">
               {document.cookie !== "loggedIn=true" && (
                 <Button
                   color="inherit"
-                  className="nav-list-item"
+                  className="list-list-item"
                   onClick={() => {
                     document.cookie = "loggedIn=";
                     window.location.replace("/login");
@@ -59,7 +59,7 @@ export default function Nav(props) {
       <Typography color="text-primary">
         {cookies.loggedIn && (
           <span>
-            Welcome <span style={{ color: "hotpink" }}>{props.user}</span>!
+            Welcome <span style={{ color: "orange" }}>{props.user}</span>!
           </span>
         )}
       </Typography>

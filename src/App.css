@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 50%;
+}
+
+.login-submit {
+  margin-top: 1.5rem !important;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 18rem;
+  margin: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding-inline-start: 1.25rem;
+}
+
+.text-gray {
+  color: rgb(116, 115, 115);
+}
+
+.detail-container {
+  margin-top: 3.125rem;
+}
+
+.list-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  list-style: none;
+}
+
+.list-list-item {
+  margin: auto 1.25rem;
+}
+
+.list-list-item:hover {
+  cursor: pointer;
+}
+
+.list-title {
+  text-align: left;
+}
+
+.detail-container {
+  margin-top: 3.125rem;
+}
+
+p {
+  font-size: 16px;
+}
+
+.nav-toolbar {
+  background-color: rgb(65, 107, 23);
+}
+
+.business-card {
+  margin-bottom: 6.25rem;
+}
+
+h5 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}

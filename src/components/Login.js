@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <div className="App">
         <Container maxWidth="sm">
-          <form className="login-form" onSubmit={this.login}>
+          <form className="login-container" onSubmit={this.login}>
             <TextField
               required
               onChange={this.handleTextChange}
@@ -48,7 +48,7 @@ class App extends Component {
             />
             <Button
               type="submit"
-              className="login-button"
+              className="login-submit"
               variant="contained"
               color="gray"
             >
